@@ -5,7 +5,6 @@ unsetopt nomatch
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-#export SENDGRID_MAIL_AUTHTOKEN="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"
 #from ~/.bashrc
 #export snap/snap/bin
 alias bat=batcat
