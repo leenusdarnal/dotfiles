@@ -1,0 +1,80 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.suggestSelection": "first",
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 15,
+  "vsicons.dontShowNewVersionMessage": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.fontFamily": "'FiraMono Nerd Font','PowerlineSymbols','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "markdown.preview.fontFamily": "'FiraMono Nerd Font','PowerlineSymbols',-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
+  "terminal.integrated.fontSize": 15,
+  "git.confirmSync": true,
+  "terminal.integrated.env.linux": {},
+  "json.schemas": [],
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/env": true,
+    "**/venv": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/env/**": true,
+    "**/venv/**": true,
+    "env-*": true
+  },
+  "files.exclude": {
+    "*.sublime-*": true,
+    "**/__pycache__": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.pytest_cache": true,
+    "**/.vscode": true,
+    "env*": true,
+    "venv": true
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "debug.node.autoAttach": "off",
+  // emmet config
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "editor.snippetSuggestions": "inline",
+  // PRETTIER CONFIG
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    // For ESLint
+    "source.fixAll.eslint": true,
+    // For TSLint
+    "source.fixAll.tslint": true,
+    // For Stylelint
+    "source.fixAll.stylelint": true
+  },
+  "files.associations": {
+    "*.jsx": "javascriptreact"
+  },
+  "npm-intellisense.packageSubfoldersIntellisense": true,
+  "eslint.alwaysShowStatus": true,
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "terminal.integrated.fontFamily": "FiraMono Nerd Font ",
+  "typescript.implementationsCodeLens.enabled": true,
+  "workbench.enableExperiments": false,
+  "telemetry.telemetryLevel": "off"
+}
