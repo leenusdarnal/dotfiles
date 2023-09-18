@@ -1,19 +1,37 @@
 {
-  "workbench.startupEditor": "newUntitledFile",
-  "editor.suggestSelection": "first",
-  "workbench.colorTheme": "Dracula",
+  "files.autoSave": "onFocusChange",
   "workbench.iconTheme": "material-icon-theme",
   "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "editor.fontSize": 15,
-  "vsicons.dontShowNewVersionMessage": true,
-  "diffEditor.ignoreTrimWhitespace": false,
+  //integrated Terminal and fonts
   "editor.fontFamily": "'FiraMono Nerd Font','PowerlineSymbols','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "markdown.preview.fontFamily": "'FiraMono Nerd Font','PowerlineSymbols',-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
+  "markdown.preview.fontFamily": "'FiraMono Nerd Font','PowerlineSymbols', 'Ubuntu', 'Droid Sans', sans-serif",
   "terminal.integrated.fontSize": 15,
-  "git.confirmSync": true,
-  "terminal.integrated.env.linux": {},
-  "json.schemas": [],
+  "terminal.integrated.fontFamily": "'MesloLGS NF'",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  //bracket pair color
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#138cee",
+    "editorBracketHighlight.foreground2": "#f59d06",
+    "editorBracketHighlight.foreground3": "#09eb4d",
+    "editorBracketHighlight.foreground4": "#01e3fc",
+    "editorBracketHighlight.foreground5": "#81ff03",
+    "editorBracketHighlight.foreground6": "#898a8b",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#ff0008",
+    //trial
+    "tree.indentGuidesStroke": "#05ef3c"
+  },
+  //autocompletion and snippets
+  "editor.tabCompletion": "on",
+  "editor.suggest.localityBonus": true,
+  //auto import relative path
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+  // "javascript.suggest.autoImports": true,
+  // "typescript.suggest.autoImports": true,
+  //excluding files for faster serach
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
@@ -23,58 +41,187 @@
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
-    "**/node_modules/**": true,
-    "**/env/**": true,
-    "**/venv/**": true,
-    "env-*": true
+    "**/node_modules/**": true
   },
   "files.exclude": {
     "*.sublime-*": true,
     "**/__pycache__": true,
     "**/.DS_Store": true,
-    "**/.git": true,
+    "**/.git": false,
     "**/.pytest_cache": true,
-    "**/.vscode": true,
-    "env*": true,
-    "venv": true
+    "**/.vscode": true
   },
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "debug.node.autoAttach": "off",
-  // emmet config
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+  "explorer.confirmDelete": false,
+  // "emmet.includeLanguages": {
+  //   "javascript": "javascriptreact",
+  //   "typescript": "typescriptreact"
+  // },
+  "files.associations": {
+    "*.jsx": "javascriptreact",
+    "*.tsx": "typescriptreact",
+    ".*css": "tailwindcss",
+    "*.css": "css",
+    ".env*": "dotenv"
   },
-  "emmet.triggerExpansionOnTab": true,
-  "emmet.showSuggestionsAsSnippets": true,
+  "typescript.workspaceSymbols.scope": "currentProject",
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.preferences.jsxAttributeCompletionStyle": "none",
+  "javascript.preferences.jsxAttributeCompletionStyle": "none",
+  //Tailwind specific
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  // "tailwindCSS.includeLanguages": {
+  //   "javascript": "javascript",
+  //   "javascriptreact": "javascriptreact",
+  //   "typescript": "typescript",
+  //   "typescriptreact": "typescriptreact",
+  //   "plaintext": "html",
+  //   "html": "HTML",
+  //   "svelte": "svelte",
+  //   "css": "css"
+  // },
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.lint.invalidApply": "warning",
+  //onsave Action to perform
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.": true
+  // },
+  //eslint setup
+  "javascript.format.enable": false,
+  // "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
-  "editor.snippetSuggestions": "inline",
-  // PRETTIER CONFIG
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[json, jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css][scss][less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.codeActionsOnSave": {
-    // For ESLint
-    "source.fixAll.eslint": true,
-    // For TSLint
-    "source.fixAll.tslint": true,
-    // For Stylelint
-    "source.fixAll.stylelint": true
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.associations": {
-    "*.jsx": "javascriptreact"
-  },
-  "npm-intellisense.packageSubfoldersIntellisense": true,
-  "eslint.alwaysShowStatus": true,
-  "javascript.updateImportsOnFileMove.enabled": "prompt",
 
-  "typescript.preferences.importModuleSpecifier": "relative",
-  "javascript.preferences.importModuleSpecifier": "relative",
-  "bracket-pair-colorizer-2.depreciation-notice": false,
-  "terminal.integrated.fontFamily": "FiraMono Nerd Font ",
-  "typescript.implementationsCodeLens.enabled": true,
-  "workbench.enableExperiments": false,
-  "telemetry.telemetryLevel": "off"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "telemetry.telemetryLevel": "off",
+  "workbench.startupEditor": "none",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.formatOnPaste": false,
+  "prettier.semi": false,
+  "css.lint.unknownAtRules": "ignore",
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove",
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  "editor.fontWeight": "bold",
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "workbench.editor.tabSizing": "shrink",
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 100,
+  "workbench.colorTheme": "poimandres",
+
+  // svelte
+
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "svelte.enable-ts-plugin": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+  "editor.lineNumbers": "relative",
+  "zenMode.hideLineNumbers": false,
+  "workbench.sideBar.location": "right",
+  "keyboard.dispatch": "keyCode",
+  "svelte.plugin.svelte.defaultScriptLanguage": "ts",
+
+  // demo
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
+  "window.zoomLevel": -1,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "vim.useSystemClipboard": true,
+  "vim.leader": " ",
+  "js/ts.implicitProjectConfig.target": "ESNext",
+  "prettier.singleAttributePerLine": true,
+  "npm.scriptHover": false,
+  "php.suggest.basic": false,
+  "php.validate.enable": false,
+  "markdown.extension.print.theme": "dark",
+  "html.format.indentInnerHtml": true,
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "svelte"
+  ],
+  "color-highlight.markRuler": false,
+  "workbench.preferredHighContrastLightColorTheme": "Default High Contrast",
+  "colorize.include": [
+    "**/*.css",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.less",
+    "**/*.styl"
+  ],
+  "colorize.languages": [
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "postcss",
+    "sss",
+    "stylus",
+    "xml",
+    "svg",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "jsonc",
+    "json"
+  ],
+  "colorize.colorized_colors": ["BROWSERS_COLORS", "HEXA", "RGB", "HSL"],
+  "svg.preview.mode": "img"
 }
